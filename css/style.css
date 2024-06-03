@@ -1,0 +1,463 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Général */
+
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;   
+    font-family: var(--font);
+}
+
+:root {
+    --font: "Open Sans";
+    --black: #000;
+    --white: #fff;
+    --fondGris: rgba(242, 244, 242, 1);
+    --vert: rgba(0, 106, 25, 1);
+    --blue: rgba(2, 121, 126, 1);
+    --perma: "Pemanent Marker";
+}
+
+h1{
+    font-size: 36px;
+    color: var(--vert);
+    font-family: var(--perma);
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--vert);
+    font-family: var(--perma);
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--blue);
+    font-family: var(--perma);
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    padding: 0px; 
+    display: flex;
+    gap: 40px;
+}
+    
+
+.container-width-1440 {
+    max-width: 1440px;
+    margin:  auto;
+    padding: 0 15px;
+}
+
+.container-width-1140 {
+    max-width: 1140px;
+    margin:  auto;
+    padding: 0 15px;
+}
+
+#burger_menu {
+    display: none;
+}
+
+.hr1 {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.hr1::before {
+    background: currentColor;
+    content: "";
+    width: 60px;
+    height: 2px;
+    margin: 10px;
+}
+
+.hr2 {
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.hr2::before,
+.hr2::after {
+    background: currentColor;
+    content: "";
+    width: 60px;
+    height: 2px;
+    margin: 10px;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+header img {
+    width: 200px;
+    margin: 10px 0px;
+}
+
+header > nav > ul > li:nth-child(1) > a {
+    color: var(--vert);
+}
+
+header > nav > ul {
+    margin-top: 10px;
+}
+
+
+/* Section1 */
+
+#section1 {
+    background-color: var(--fondGris);
+    margin: 60px 0px;
+}
+
+#section1 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section1 img {
+    width: 100%;
+}
+
+#section1 h1 {
+    margin: 30px 0px;
+}
+
+#section1 p {
+    margin: 20px 0px;
+}
+
+#section1 a {
+    display: block;
+    border: 1px solid var(--vert);
+    padding: 5px 15px;
+    background-color: var(--vert);
+    color: var(--white);
+    align-self: center;
+}
+
+#section1 article {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* Section2 */
+
+#section2 > h2 {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#section2 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 60px;
+}
+
+#section2 > div > article > i {
+    display: block;
+    font-size: 50px;
+    color: var(--blue);
+    text-align: center;
+}
+
+#section2 > div > article > p {
+    margin: 0px 30px;
+}
+
+#section2 > div > article {
+    text-align: center;
+}
+
+#section2 > div > article:nth-child(2) {
+    border-left: 2px solid var(--vert);
+    border-right: 2px solid var(--vert);
+}
+
+#section2 > div > article:nth-child(3) {
+    border-right: 2px solid var(--vert);
+}
+
+/* Section3 */
+
+#section3 {
+    background-color: var(--blue);
+    padding: 20px 0px;
+}
+
+#section3 h2 {
+    color: var(--white);
+}
+
+#section3 > div > article {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 0px;
+}
+
+#section3 > div > article > img {
+    width: 175px;
+    align-self: center;
+}
+
+
+
+/* Section4 */
+
+#section4 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+#section4 > div > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#section4 > div > h2 {
+    margin-bottom: 20px;
+}
+
+#section4 > div > article > img {
+    width: 460px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+#section4 > div > a {
+    color: var(--white);
+    border: 1px solid var(--vert);
+    background: var(--vert);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Section5 */
+
+#section5 {
+    background-color: var(--fondGris);
+    padding: 20px 0px;
+}
+
+#section5 > div > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#section5 > div > div > form {
+    display: flex;
+    flex-direction: column;
+}
+
+#section5 > div > div > article {
+    align-content: center;
+}
+
+#section5 > div > div > article > p {
+    margin: 10px 0px;
+}
+
+#section5 > div > div > article > p:nth-child(1) {
+    margin: 30px 0px;
+}
+
+#section5 > div > div > article > p:nth-child(2)::before{
+    content: "\f10b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--vert);
+    margin-right: 5px;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+#section5 > div > div > article > p:nth-child(3)::before{
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--vert);
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+#section5 > div > div > article > p:nth-child(4)::before{
+    content: "\f273";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--vert);
+    margin-right: 5px;
+    font-size: 16px;
+    margin-left: 1px;
+}
+
+#section5 > div > div > form > input {
+    height: 32px;
+    margin: 10px 0px;
+} 
+
+#checkbox {
+    margin-bottom: 20px;
+}
+
+#section5 > div > h2 {
+    margin-bottom: 30px;
+}
+
+#message {
+    margin: 10px 0px 20px 0px;
+}
+
+#submit {
+    width: 100px;
+    color: var(--white);
+    background: var(--vert);
+    border: var(--vert);
+    border-radius: 5px;
+}
+
+/*Footer */
+
+footer {
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--blue);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #section2 > div {
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+    }
+
+    #section2 > div > article:nth-child(2) {
+        border-right: none;
+    }
+
+    #section2 > div > article:nth-child(3) {
+        border: none;
+    }
+
+    #section2 > div > article:nth-child(4) {
+        border-left: 2px solid var(--vert);
+    }
+
+    #section3 > div > article {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    #section4 > div > article > img {
+        width: 100%;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #burger_menu{
+        display: block;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    #section1 > div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    } 
+
+    #section2 > div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #section2 > div > article:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+
+    #section2 > div > article:nth-child(3) {
+        border-right: none;
+    }
+
+    #section3 > div > article {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #section3 > div > article img {
+        width: 100%;
+    }
+
+    #section4 > div > article{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    #section4 > div > article > img {
+        width: 100%;
+    }
+
+    #section5 > div > div {
+        grid-template-columns: 1fr;
+    }
+
+    #section5 > div > div form{
+        width: 100%;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #burger_menu{
+        display: block;
+    } 
+
+    #section5 > div > div > article > p:nth-child(1) {
+        margin: 30px 100px 30px 0px;
+    }
+
+    #section5 > div > div > article > p {
+        margin: 30px 100px 30px 0px;
+    }
+
+    #section5 > div > div > form {
+        width: 70%
+    }
+
+    #section5 > div > div > article {
+        width: 70%;
+    }
+}
